@@ -1,0 +1,29 @@
+meta {
+  name: delete-specific-user
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/users/{{userId}}
+  body: none
+  auth: none
+}
+
+tests {
+  const data = res.getBody();
+  
+  test("Response headers should be 'No content'", function(){
+       expect(res.statusText).be.equal("No Content");
+  });
+  
+  test("Status code should be 204", function(){
+    expect(res.getStatus()).be.equal(204);
+  });
+  
+  test("Response body should be empty", function(){
+    expect(data).is.empty;
+  });
+  
+  
+}

@@ -1,0 +1,43 @@
+meta {
+  name: patch-specific-resource
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{baseUrl}}/{resource}/{{userId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "support": {
+      "url": "{{updatedUrl}}"
+    }
+  }
+}
+
+vars:pre-request {
+  updatedUrl: http://reqres.in/#support-heading
+}
+
+tests {
+  const data = res.getBody();
+  
+  test("Current date should be string", function(){
+    expect(data.updatedAt).to.be.a("string");
+  })
+  
+  test("Response headers should be 'OK'", function(){
+    expect(res.statusText).to.equal("OK");
+  })
+  
+  test("Status should be 200", function(){
+    expect(res.status).to.equal(200);
+  })
+  test("New email should contains company", function(){
+    expect(data.support.url).to.equal("http://reqres.in/#support-heading");
+  })
+  
+}

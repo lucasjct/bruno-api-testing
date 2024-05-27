@@ -1,0 +1,64 @@
+meta {
+  name: list-specifc-resource
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/{resource}?page=1&per_page=5
+  body: none
+  auth: none
+}
+
+query {
+  page: 1
+  per_page: 5
+}
+
+vars:pre-request {
+  baseUrl: https://reqres.in/api
+}
+
+vars:post-response {
+  userId: res.body.data[1].id
+}
+
+assert {
+  res.status: eq 200
+}
+
+tests {
+  const data = res.getBody();
+  
+  
+  test("Response should be 200", function() {
+    expect(res.getStatus()).to.equal(200);
+  });
+  
+  test("key 'name' should be a string ", function(){ 
+    expect(data.data[0].name).to.be.a("string");
+   });
+  
+  test("key 'id' should be a number ", function(){ 
+    expect(data.data[0].id).to.be.a('number');
+   });
+  
+  test("Response headers should be OK", function(){
+    expect(res.statusText).to.equal("OK")
+  })
+  
+  
+}
+
+docs {
+  This request list all resources following the query parameters `page=` and `per_page=`.   
+  
+  On the assert tab, we can create tests using assertions, but we can create tests using Tests tabs as well.   
+  
+  using curl for qucky test:  
+  
+  ```
+  curl --request GET \
+    --url 'https://reqres.in/api/%7Bresource%7D?page=1&per_page=1'
+  ```
+}

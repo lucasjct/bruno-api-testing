@@ -1,0 +1,39 @@
+meta {
+  name: update-specific-resource
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/{resource}/{{userId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "data": {
+      "name": "fuchsia teste"
+    }
+  }
+}
+
+tests {
+  const data = res.getBody();
+  
+  test("Current date should be string", function(){
+    expect(data.updatedAt).to.be.a("string");
+  })
+  
+  test("Response headers should be 'OK'", function(){
+    expect(res.statusText).to.equal("OK");
+  })
+  
+  test("Status should be 200", function(){
+    expect(res.status).to.equal(200);
+  })
+  test("New email should contains company", function(){
+    expect(data.data.name).to.equal('fuchsia teste');
+  })
+  
+}

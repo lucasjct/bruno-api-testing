@@ -1,0 +1,40 @@
+meta {
+  name: patch-user
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/users/{{userId}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "data": {
+      "id": 1,
+      "email": "{{newEmail}}"
+    }
+  } 
+}
+
+vars:pre-request {
+  newEmail: george.bluth@mycompanycloud.br
+}
+
+tests {
+  const data = res.getBody();
+  
+  test("Get current date", function(){
+    expect(data.updatedAt).to.be.a("string");
+  })
+  
+  test("Response headers should be 'OK'", function(){
+    expect(res.statusText).to.equal("OK");
+  })
+  
+  test("Status should be 200", function(){
+    expect(res.status).to.equal(200);
+  })
+}
