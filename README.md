@@ -8,19 +8,21 @@ Using Bruno we can manage the requests, with facility, in separate files. There 
 
 Instead of, storing collections in the cloud, and should be necessary to create an account to use the toll, Bruno uses the file system locally and we can use the version control system and all teams have access to API.  
 
->[!TIP]  
-> [Read a Bruno Manifesto](https://docs.usebruno.com/introduction/manifestohttps://docs.usebruno.com/introduction/manifesto)   
+> [!TIP]  
+> [Read a Bruno Manifesto](https://docs.usebruno.com/introduction/manifesto)   
 
 
 ###  Bru lang    
 
-Is a DSL with readable syntax and it is easy to maintain. From Bruno UI, will create a file with the extension `.bru` for each request in your collection directory.   
+Is a DSL with readable syntax and it is easy to maintain. From Bruno UI, will create a file with the extension `.bru` for each request in your collection directory.
 
+Let's see an example, first create a test using Bruno UI:
 
 ![image](./image/bruno-get.png)    
 
 
 The file `.bru`, with syntax Bru Lang generated from the test above:  
-  
+
+Now, we can see the bru lang:  
 
 ![image](./image/bru-lang-get.png)  
