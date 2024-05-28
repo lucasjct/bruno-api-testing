@@ -11,11 +11,9 @@ jobs:
       - name: Checkout code 
         uses: actions/checkout@v4.1.1
       - name: Install Bruno
-        run:  npm install -g @usebruno/cli 
+        run: npm install -g @usebruno/cli 
       - name: Run tests
-        run: | 
-          cd demo-collection && \
-          bru run
+        run: bru run
 
 
 
