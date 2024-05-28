@@ -55,7 +55,7 @@ We can run tests using CLI. It is a great feature for CI/CD.
 
 Just install node, and Bruno CLI using the command: ` npm install -g @usebruno/cli` . Then, execute the tests using `bru run`. See the results below:   
 
-![docs-in-file](./image/docfile.png)   
+![docs-in-file](./image/cli.png)   
 
 For all options, run `bru run --help`.   
 
