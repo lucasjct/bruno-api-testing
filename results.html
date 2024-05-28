@@ -1,0 +1,779 @@
+{
+  "summary": {
+    "totalRequests": 10,
+    "passedRequests": 10,
+    "failedRequests": 0,
+    "totalAssertions": 2,
+    "passedAssertions": 2,
+    "failedAssertions": 0,
+    "totalTests": 37,
+    "passedTests": 37,
+    "failedTests": 0
+  },
+  "results": [
+    {
+      "test": {
+        "filename": "resources/list-specifc-resource.bru"
+      },
+      "request": {
+        "method": "GET",
+        "url": "https://reqres.in/api/{resource}?page=1&per_page=5",
+        "headers": {}
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:07 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716841143&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=bDgp81%2FNhnwdBLNFJVlBGu1V%2BFZLAUFZJSx8N35PgyA%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716841143&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=bDgp81%2FNhnwdBLNFJVlBGu1V%2BFZLAUFZJSx8N35PgyA%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"268-TH8A8QqoZfECP0EP27RPQIHWqXY\"",
+          "via": "1.1 vegur",
+          "cache-control": "max-age=14400",
+          "cf-cache-status": "HIT",
+          "age": "723",
+          "vary": "Accept-Encoding",
+          "server": "cloudflare",
+          "cf-ray": "88b0f766eee81cdb-GRU"
+        },
+        "data": {
+          "page": 1,
+          "per_page": 5,
+          "total": 12,
+          "total_pages": 3,
+          "data": [
+            {
+              "id": 1,
+              "name": "cerulean",
+              "year": 2000,
+              "color": "#98B2D1",
+              "pantone_value": "15-4020"
+            },
+            {
+              "id": 2,
+              "name": "fuchsia rose",
+              "year": 2001,
+              "color": "#C74375",
+              "pantone_value": "17-2031"
+            },
+            {
+              "id": 3,
+              "name": "true red",
+              "year": 2002,
+              "color": "#BF1932",
+              "pantone_value": "19-1664"
+            },
+            {
+              "id": 4,
+              "name": "aqua sky",
+              "year": 2003,
+              "color": "#7BC4C4",
+              "pantone_value": "14-4811"
+            },
+            {
+              "id": 5,
+              "name": "tigerlily",
+              "year": 2004,
+              "color": "#E2583E",
+              "pantone_value": "17-1456"
+            }
+          ],
+          "support": {
+            "url": "https://reqres.in/#support-heading",
+            "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+          }
+        },
+        "responseTime": 132
+      },
+      "error": null,
+      "assertionResults": [
+        {
+          "uid": "-xsUzp27K6rDGKF35RFIH",
+          "lhsExpr": "res.status",
+          "rhsExpr": "eq 200",
+          "rhsOperand": "200",
+          "operator": "eq",
+          "status": "pass"
+        }
+      ],
+      "testResults": [
+        {
+          "description": "Response should be 200",
+          "status": "pass",
+          "uid": "yUCVxjKJsckazJSLgyW6f"
+        },
+        {
+          "description": "key 'name' should be a string ",
+          "status": "pass",
+          "uid": "571zTVSKJ6vBhXYDVgneO"
+        },
+        {
+          "description": "key 'id' should be a number ",
+          "status": "pass",
+          "uid": "FCRruFlTNtkhAzGQnvy-N"
+        },
+        {
+          "description": "Response headers should be OK",
+          "status": "pass",
+          "uid": "5Li84JBYRYUB7dvj5VxAX"
+        }
+      ],
+      "runtime": 0.159478095,
+      "suitename": "resources/list-specifc-resource"
+    },
+    {
+      "test": {
+        "filename": "resources/list-resource.bru"
+      },
+      "request": {
+        "method": "GET",
+        "url": "https://reqres.in/api/{resource}/2",
+        "headers": {}
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:07 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716841181&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=D8R6LgaIvwAj11wwc7oDUYNOlnOttoPPSNxsWE0ZjBM%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716841181&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=D8R6LgaIvwAj11wwc7oDUYNOlnOttoPPSNxsWE0ZjBM%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"e8-ov4wWh4/OY1IMQMqWgskYtOFnVs\"",
+          "via": "1.1 vegur",
+          "cache-control": "max-age=14400",
+          "cf-cache-status": "HIT",
+          "age": "723",
+          "vary": "Accept-Encoding",
+          "server": "cloudflare",
+          "cf-ray": "88b0f7676f5b1cdb-GRU"
+        },
+        "data": {
+          "data": {
+            "id": 2,
+            "name": "fuchsia rose",
+            "year": 2001,
+            "color": "#C74375",
+            "pantone_value": "17-2031"
+          },
+          "support": {
+            "url": "https://reqres.in/#support-heading",
+            "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+          }
+        },
+        "responseTime": 47
+      },
+      "error": null,
+      "assertionResults": [
+        {
+          "uid": "ab69sYt_16z2VveGY97bU",
+          "lhsExpr": "res.status",
+          "rhsExpr": "eq 200",
+          "rhsOperand": "200",
+          "operator": "eq",
+          "status": "pass"
+        }
+      ],
+      "testResults": [
+        {
+          "description": "Response should be 200",
+          "status": "pass",
+          "uid": "fLxqHK_dsnRgHecLlscnv"
+        },
+        {
+          "description": "key 'name' should be a string ",
+          "status": "pass",
+          "uid": "1fJn2JUwNmKhcCGJsFTsB"
+        },
+        {
+          "description": "key 'id' should be a number ",
+          "status": "pass",
+          "uid": "auR1hIP4rpCQMc-lwaUDR"
+        },
+        {
+          "description": "Response headers should be OK",
+          "status": "pass",
+          "uid": "yRRESu8Kck97LJTFnx25p"
+        }
+      ],
+      "runtime": 0.056434013,
+      "suitename": "resources/list-resource"
+    },
+    {
+      "test": {
+        "filename": "resources/update-specific-resource.bru"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "https://reqres.in/api/{resource}/2",
+        "headers": {
+          "content-type": "application/json"
+        },
+        "data": {
+          "data": {
+            "name": "fuchsia teste"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:08 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716927847&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=28sSmTYzXNnEG3ErJdKTwr6EUKnIBX4yx4BOEd2LM90%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716927847&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=28sSmTYzXNnEG3ErJdKTwr6EUKnIBX4yx4BOEd2LM90%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"48-mC99sQWjKdBib6pj43WnjxR61ec\"",
+          "via": "1.1 vegur",
+          "cf-cache-status": "DYNAMIC",
+          "vary": "Accept-Encoding",
+          "server": "cloudflare",
+          "cf-ray": "88b0f767bfb31cdb-GRU"
+        },
+        "data": {
+          "data": {
+            "name": "fuchsia teste"
+          },
+          "updatedAt": "2024-05-28T20:24:07.952Z"
+        },
+        "responseTime": 443
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "Current date should be string",
+          "status": "pass",
+          "uid": "ldCWw4HF_E9JZhAN6_EHB"
+        },
+        {
+          "description": "Response headers should be 'OK'",
+          "status": "pass",
+          "uid": "vmkwUWS-9wBC-djoPrujl"
+        },
+        {
+          "description": "Status should be 200",
+          "status": "pass",
+          "uid": "uZAQbflD4z4IaVqO5kqqQ"
+        },
+        {
+          "description": "New email should contains company",
+          "status": "pass",
+          "uid": "MZwave09hzgKfSCiBFVrf"
+        }
+      ],
+      "runtime": 0.454965707,
+      "suitename": "resources/update-specific-resource"
+    },
+    {
+      "test": {
+        "filename": "resources/patch-specific-resource.bru"
+      },
+      "request": {
+        "method": "PATCH",
+        "url": "https://reqres.in/api/{resource}/2",
+        "headers": {
+          "content-type": "application/json"
+        },
+        "data": {
+          "support": {
+            "url": "http://reqres.in/#support-heading"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:08 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716927848&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=jmw0XjaXHvn9VCeyqGs00esag0eZRx7pkOm1UaL8I1Q%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716927848&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=jmw0XjaXHvn9VCeyqGs00esag0eZRx7pkOm1UaL8I1Q%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"5e-QhnyFdtuNoT0eAAnjWETU1XpknI\"",
+          "via": "1.1 vegur",
+          "cf-cache-status": "DYNAMIC",
+          "server": "cloudflare",
+          "cf-ray": "88b0f76a8ab31cdb-GRU"
+        },
+        "data": {
+          "support": {
+            "url": "http://reqres.in/#support-heading"
+          },
+          "updatedAt": "2024-05-28T20:24:08.406Z"
+        },
+        "responseTime": 442
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "Current date should be string",
+          "status": "pass",
+          "uid": "JaRRDJMudsmVz4kfeJBQ7"
+        },
+        {
+          "description": "Response headers should be 'OK'",
+          "status": "pass",
+          "uid": "bqmOziPsghOocpqFF2Xfh"
+        },
+        {
+          "description": "Status should be 200",
+          "status": "pass",
+          "uid": "-72y0fMo0ojR6MFOJIONj"
+        },
+        {
+          "description": "New email should contains company",
+          "status": "pass",
+          "uid": "ZcK65vaUslJLuHVxNvBYd"
+        }
+      ],
+      "runtime": 0.452446728,
+      "suitename": "resources/patch-specific-resource"
+    },
+    {
+      "test": {
+        "filename": "resources/delete-specific-resource.bru"
+      },
+      "request": {
+        "method": "DELETE",
+        "url": "https://reqres.in/api/{resource}/2",
+        "headers": {
+          "content-type": "application/json"
+        },
+        "data": {
+          "support": {
+            "url": "http://reqres.in/#support-heading"
+          }
+        }
+      },
+      "response": {
+        "status": 204,
+        "statusText": "No Content",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:08 GMT",
+          "content-length": "0",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716927848&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=jmw0XjaXHvn9VCeyqGs00esag0eZRx7pkOm1UaL8I1Q%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716927848&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=jmw0XjaXHvn9VCeyqGs00esag0eZRx7pkOm1UaL8I1Q%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\"",
+          "via": "1.1 vegur",
+          "cf-cache-status": "DYNAMIC",
+          "server": "cloudflare",
+          "cf-ray": "88b0f76d5e271cdb-GRU"
+        },
+        "data": "",
+        "responseTime": 440
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "Response headers should be 'No content'",
+          "status": "pass",
+          "uid": "Q0AAtLWRv_pr6oth_iITk"
+        },
+        {
+          "description": "Status code should be 204",
+          "status": "pass",
+          "uid": "S_8En6Ub2EsylCQ7MXvqN"
+        },
+        {
+          "description": "Response body should be empty",
+          "status": "pass",
+          "uid": "R5_iBUP9szWJY1pm-qp7x"
+        }
+      ],
+      "runtime": 0.450631493,
+      "suitename": "resources/delete-specific-resource"
+    },
+    {
+      "test": {
+        "filename": "users/user-by-id.bru"
+      },
+      "request": {
+        "method": "GET",
+        "url": "https://reqres.in/api/users/2",
+        "headers": {}
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:08 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716924311&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=1Et4bcfdG%2FAYl2BkHc6%2Fx2tQ3iSlWym6gXDYi%2FxM%2Bo0%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716924311&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=1Et4bcfdG%2FAYl2BkHc6%2Fx2tQ3iSlWym6gXDYi%2FxM%2Bo0%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"118-pbdwwFo9SKNhD3Lx5iHJyngpq00\"",
+          "via": "1.1 vegur",
+          "cache-control": "max-age=14400",
+          "cf-cache-status": "HIT",
+          "age": "3537",
+          "vary": "Accept-Encoding",
+          "server": "cloudflare",
+          "cf-ray": "88b0f7703a121cdb-GRU"
+        },
+        "data": {
+          "data": {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+          },
+          "support": {
+            "url": "https://reqres.in/#support-heading",
+            "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+          }
+        },
+        "responseTime": 32
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "Response should be 200",
+          "status": "pass",
+          "uid": "jzyoof90QTgPVfF6wrpn7"
+        },
+        {
+          "description": "key 'name' should be a string ",
+          "status": "pass",
+          "uid": "9-EGb9pMCNauWcBu_TPxL"
+        },
+        {
+          "description": "key 'id' should be a number ",
+          "status": "pass",
+          "uid": "1VmMwp1S8ZoV6ASfMRr00"
+        },
+        {
+          "description": "Response headers should be OK",
+          "status": "pass",
+          "uid": "_nESdHzy28WHeqbBjqsHe"
+        }
+      ],
+      "runtime": 0.040905162,
+      "suitename": "users/user-by-id"
+    },
+    {
+      "test": {
+        "filename": "users/list-users.bru"
+      },
+      "request": {
+        "method": "GET",
+        "url": "https://reqres.in/api/users?page=1&per_page=5",
+        "headers": {}
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:09 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716866220&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XqKjTXLQCYmalkz1mwO9WKjSoyOeeIaejUlvQCwV%2Ffg%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716866220&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XqKjTXLQCYmalkz1mwO9WKjSoyOeeIaejUlvQCwV%2Ffg%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"35d-PS5jtomeaWU5npUH9Kuuaq8q5r4\"",
+          "via": "1.1 vegur",
+          "cache-control": "max-age=14400",
+          "cf-cache-status": "HIT",
+          "age": "723",
+          "vary": "Accept-Encoding",
+          "server": "cloudflare",
+          "cf-ray": "88b0f7707a5b1cdb-GRU"
+        },
+        "data": {
+          "page": 1,
+          "per_page": 5,
+          "total": 12,
+          "total_pages": 3,
+          "data": [
+            {
+              "id": 1,
+              "email": "george.bluth@reqres.in",
+              "first_name": "George",
+              "last_name": "Bluth",
+              "avatar": "https://reqres.in/img/faces/1-image.jpg"
+            },
+            {
+              "id": 2,
+              "email": "janet.weaver@reqres.in",
+              "first_name": "Janet",
+              "last_name": "Weaver",
+              "avatar": "https://reqres.in/img/faces/2-image.jpg"
+            },
+            {
+              "id": 3,
+              "email": "emma.wong@reqres.in",
+              "first_name": "Emma",
+              "last_name": "Wong",
+              "avatar": "https://reqres.in/img/faces/3-image.jpg"
+            },
+            {
+              "id": 4,
+              "email": "eve.holt@reqres.in",
+              "first_name": "Eve",
+              "last_name": "Holt",
+              "avatar": "https://reqres.in/img/faces/4-image.jpg"
+            },
+            {
+              "id": 5,
+              "email": "charles.morris@reqres.in",
+              "first_name": "Charles",
+              "last_name": "Morris",
+              "avatar": "https://reqres.in/img/faces/5-image.jpg"
+            }
+          ],
+          "support": {
+            "url": "https://reqres.in/#support-heading",
+            "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+          }
+        },
+        "responseTime": 29
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "Response should be 200",
+          "status": "pass",
+          "uid": "3OR4ZPVIv0uBKxvkmaiGR"
+        },
+        {
+          "description": "key 'first_name' should be a string ",
+          "status": "pass",
+          "uid": "Yup9DZjOqYCke8PeXXitr"
+        },
+        {
+          "description": "key 'id' should be a number ",
+          "status": "pass",
+          "uid": "ZaEY8R2X3Ipv1pi04rB6x"
+        },
+        {
+          "description": "Response headers should be OK",
+          "status": "pass",
+          "uid": "ZCgmpOLc77pjmrlNq73CM"
+        }
+      ],
+      "runtime": 0.038366925,
+      "suitename": "users/list-users"
+    },
+    {
+      "test": {
+        "filename": "users/patch-user.bru"
+      },
+      "request": {
+        "method": "PATCH",
+        "url": "https://reqres.in/api/users/1",
+        "headers": {
+          "content-type": "application/json"
+        },
+        "data": {
+          "data": {
+            "id": 1,
+            "email": "george.bluth@mycompanycloud.br"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:09 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716927849&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2B6aioeb68E%2Bna%2FSijnX9KkF0YvPyqUrItDhF2On6sps%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716927849&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2B6aioeb68E%2Bna%2FSijnX9KkF0YvPyqUrItDhF2On6sps%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"61-SjWpp4Mzpc6jryL2rwHDGPI69m4\"",
+          "via": "1.1 vegur",
+          "cf-cache-status": "DYNAMIC",
+          "server": "cloudflare",
+          "cf-ray": "88b0f770baae1cdb-GRU"
+        },
+        "data": {
+          "data": {
+            "id": 1,
+            "email": "george.bluth@mycompanycloud.br"
+          },
+          "updatedAt": "2024-05-28T20:24:09.389Z"
+        },
+        "responseTime": 445
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "Get current date",
+          "status": "pass",
+          "uid": "BaCZgFiGPMyKNTTBwA919"
+        },
+        {
+          "description": "Response headers should be 'OK'",
+          "status": "pass",
+          "uid": "aoaySPp8cSNMDbDKG4P6d"
+        },
+        {
+          "description": "Status should be 200",
+          "status": "pass",
+          "uid": "3peswTWOH7McSuvcVMPrt"
+        }
+      ],
+      "runtime": 0.45426883,
+      "suitename": "users/patch-user"
+    },
+    {
+      "test": {
+        "filename": "users/update-user.bru"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "https://reqres.in/api/users/1",
+        "headers": {
+          "content-type": "application/json"
+        },
+        "data": {
+          "email": "george.bluth@company.br"
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:09 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716927849&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2B6aioeb68E%2Bna%2FSijnX9KkF0YvPyqUrItDhF2On6sps%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716927849&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2B6aioeb68E%2Bna%2FSijnX9KkF0YvPyqUrItDhF2On6sps%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"4a-8LzHzI7Lrar8lpIF3YSHHntaWWo\"",
+          "via": "1.1 vegur",
+          "cf-cache-status": "DYNAMIC",
+          "vary": "Accept-Encoding",
+          "server": "cloudflare",
+          "cf-ray": "88b0f7738df41cdb-GRU"
+        },
+        "data": {
+          "email": "george.bluth@company.br",
+          "updatedAt": "2024-05-28T20:24:09.825Z"
+        },
+        "responseTime": 421
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "Get current date",
+          "status": "pass",
+          "uid": "CTLDm7s1g-8yuluqTsn1b"
+        },
+        {
+          "description": "Response headers should be 'OK'",
+          "status": "pass",
+          "uid": "D3revKdhIMr0zON1JR82o"
+        },
+        {
+          "description": "Status should be 200",
+          "status": "pass",
+          "uid": "v1-y6LEhefcKxVORDvbRA"
+        },
+        {
+          "description": "New email should contains company",
+          "status": "pass",
+          "uid": "DdelEwOplSezT5j_CYR2Z"
+        }
+      ],
+      "runtime": 0.427310557,
+      "suitename": "users/update-user"
+    },
+    {
+      "test": {
+        "filename": "users/delete-specific-user.bru"
+      },
+      "request": {
+        "method": "DELETE",
+        "url": "https://reqres.in/api/users/1",
+        "headers": {}
+      },
+      "response": {
+        "status": 204,
+        "statusText": "No Content",
+        "headers": {
+          "date": "Tue, 28 May 2024 20:24:10 GMT",
+          "content-length": "0",
+          "connection": "keep-alive",
+          "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1716927850&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=D795lv5pvmwHz9gY27GS02BmNJXZz5LCb5fmPTv1Dmw%3D\"}]}",
+          "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1716927850&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=D795lv5pvmwHz9gY27GS02BmNJXZz5LCb5fmPTv1Dmw%3D",
+          "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+          "x-powered-by": "Express",
+          "access-control-allow-origin": "*",
+          "etag": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\"",
+          "via": "1.1 vegur",
+          "cf-cache-status": "DYNAMIC",
+          "server": "cloudflare",
+          "cf-ray": "88b0f77628941cdb-GRU"
+        },
+        "data": "",
+        "responseTime": 434
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "Response headers should be 'No content'",
+          "status": "pass",
+          "uid": "LUOnNa5dS5-3kz9zGm_o6"
+        },
+        {
+          "description": "Status code should be 204",
+          "status": "pass",
+          "uid": "pVTPfOWq22D8FH17Xn7Kl"
+        },
+        {
+          "description": "Response body should be empty",
+          "status": "pass",
+          "uid": "OZKzEoEsC81OWnKTHJFoM"
+        }
+      ],
+      "runtime": 0.441922749,
+      "suitename": "users/delete-specific-user"
+    }
+  ]
+}

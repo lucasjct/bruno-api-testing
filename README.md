@@ -37,7 +37,6 @@ If the request was POST method, will be added a new field in the file:
 
 
 
-
 ## Product Area     
 
 With tools like Bruno, we can test functionality, business rules, and expected responses, and use this information in prototypes. But it can be possible if we have good documentation. Then, we can write descriptions for each request, Bruno accepting markdown.    
@@ -50,4 +49,17 @@ Like the example below, in the file `.bru` the field doc has been created.
 
 ![docs-in-file](./image/docfile.png) 
 
-## CLI  
+## CLI    
+
+We can run tests using CLI. It is a great feature for CI/CD.  
+
+Just install node, and Bruno CLI using the command: ` npm install -g @usebruno/cli` . Then, execute the tests using `bru run`. See the results below:   
+
+![docs-in-file](./image/docfile.png)   
+
+For all options, run `bru run --help`.   
+
+
+> [!TIP]  
+> [Check all possibilities](https://docs.usebruno.com/bru-cli/overview)  
+
