@@ -6,9 +6,7 @@ Bruno is an open-source alternative for API testing. We can use Bruno instead of
 Using Bruno we can manage the requests, with facility, in separate files. There is one file for each request. In Postman, there is a unique JSON file for all tests. For example, if we change just the value of variables, we have that generate a new collection and replace the whole JSON file. Normally this is the process.    
 
 
-<center><img src=
-"./image/one-file-for-each-request.png"
-width="221" height="258"></center>
+![each-file](./image/one-file-for-each-request.png)
 
 
 Instead of, storing collections in the cloud, and should be necessary to create an account to use the toll, Bruno uses the file system locally and we can use the version control system and all teams have access to API.  
@@ -17,30 +15,39 @@ Instead of, storing collections in the cloud, and should be necessary to create 
 > [Read a Bruno Manifesto](https://docs.usebruno.com/introduction/manifesto)   
 
 
-###  Bru lang    
+##  Bru lang    
 
 Is a DSL with readable syntax and it is easy to maintain. From Bruno UI, automatically creates a file with the extension `.bru` for each request in your collection directory.
 
-Let's see an example, first create a test using Bruno UI:
+Let's see an example, first create a test using Bruno UI:  
 
-<center><img src=
-"./image/bruno-get.png"
-width="800" height="640"></center>
+![bruno-ui](./image/bruno-get.png)
 
 
 
-The file `.bru`, with syntax Bru Lang generated from the test above:  
+The file `.bru`, with syntax Bru Lang generated from the test above.  
 
-Now, we can see the bru lang:  
+Now, we can see the bru lang:   
 
-<center><img src=
-"./image/bru-lang-get.png"
-width="800" height="640"></center>
+![bru-lang](./image/bru-lang-get.png)
 
 
-
-Product Area   
+If the request was POST method, will be added a new field in the file:   
+![payload](./image/payload.png)  
 
 
 
-CLI  
+
+## Product Area     
+
+With tools like Bruno, we can test functionality, business rules, and expected responses, and use this information in prototypes. But it can be possible if we have good documentation. Then, we can write descriptions for each request, Bruno accepting markdown.    
+
+Example in the UI:  
+
+![docs-ui](./image/doc.png)   
+
+Like the example below, in the file `.bru` the field doc has been created.  
+
+![docs-in-file](./image/docfile.png) 
+
+## CLI  
