@@ -8,7 +8,7 @@ Using Bruno we can manage the requests, with facility, in separate files. There 
 
 Instead of, storing collections in the cloud, and should be necessary to create an account to use the toll, Bruno uses the file system locally and we can use the version control system and all teams have access to API.  
 
-> [! TIP]  
+>[!TIP]  
 > [Read a Bruno Manifesto](https://docs.usebruno.com/introduction/manifestohttps://docs.usebruno.com/introduction/manifesto)   
 
 
