@@ -1,8 +1,9 @@
 # bruno-api-testing
 How to test API using Bruno    
 
-> [!TIP]  
-> [Check how to test api with Golang](test/readme.md)   
+> [!TIP]
+>  Sometimes, it is a good idea to create tests in the same language used by the team, it can increase the collaboration and improve quality.   In this case, Bruno may be more appropriate for exploratory API testing.    
+> [Check an example how to test api with Golang](test/readme.md)   
 
 
 Bruno is an open-source alternative to API testing. We can use Bruno instead of Postman, Insomnia, etc. It is available for Linux, Windows and MacOS. To download it, access [Bruno](https://www.usebruno.com/).
