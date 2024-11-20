@@ -1,7 +1,7 @@
 # HTTPexpect
 
 
-The tests to API Rest, has used HTTPExpect, is a Golang Framework to send http requests. It is simple to use and fast to run. We can do the same assertion like Bruno.       
+HTTPExpect, is a Golang Framework to send http requests. It is simple to use and fast to run. We can do the same assertion like Bruno.       
 
 
 
