@@ -8,7 +8,7 @@ The tests to API Rest, has used HTTPExpect, is a Golang Framework to send http r
 See details:  [httpexpect](https://github.com/gavv/httpexpect)  .
 
 
-Run the workflow on Git Hub Action: [action to httpexpect](https://github.com/lucasjct/bruno-api-testing/actions/workflows/run-test-http-expect.yaml)  .
+Run the workflow on GitHub Actions: [actions to httpexpect](https://github.com/lucasjct/bruno-api-testing/actions/workflows/run-test-http-expect.yaml)  .
 
 
 
