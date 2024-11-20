@@ -10,13 +10,9 @@ get {
   auth: none
 }
 
-query {
+params:query {
   page: 1
   per_page: 5
-}
-
-vars:pre-request {
-  baseUrl: https://reqres.in/api
 }
 
 vars:post-response {
