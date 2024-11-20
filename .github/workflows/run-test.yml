@@ -5,7 +5,7 @@ on:
 
 
 jobs:
-  run-api-test:
+  run-with-bruno:
     runs-on: ubuntu-latest
     steps:  
       - name: Checkout code 
@@ -14,6 +14,9 @@ jobs:
         run: npm install -g @usebruno/cli 
       - name: Run tests
         run: bru run
+
+  run-with-httpexpect:
+    runs-on: ubunt-latest
 
 
 
