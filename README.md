@@ -5,7 +5,7 @@ How to test API using Bruno
 > [Check how to test api with Golang](test/readme.md)   
 
 
-Bruno is an open-source alternative for API testing. We can use Bruno instead of Postman, Insomnia, etc. It is available for Linux, Windows and MacOS. For download, access [Bruno](https://www.usebruno.com/).
+Bruno is an open-source alternative to API testing. We can use Bruno instead of Postman, Insomnia, etc. It is available for Linux, Windows and MacOS. To download it, access [Bruno](https://www.usebruno.com/).
 
 With Bruno we can manage the requests with facility, in separated files. There is one file for each request. In Postman, there is a single JSON file for all tests and all requests. For example, if we change just one value of variables, we have that generate a new collection and replace the whole JSON file. Normally, this is the process available on free plan.    
 
@@ -74,7 +74,7 @@ Like the example below, in the file `.bru` the field in the doc has been created
 
 ## CLI    
 
-We can run tests using CLI. It is a great feature for CI/CD and can be implemented in pipelines. See a example here: [pipeline with Bruno](https://github.com/lucasjct/bruno-api-testing/actions/workflows/run-test-bruno.yml).  
+We can run tests using CLI. It is a great feature to CI/CD and can be implemented in pipelines. See a example here: [pipeline with Bruno](https://github.com/lucasjct/bruno-api-testing/actions/workflows/run-test-bruno.yml).  
 
 Just install Node, and Bruno CLI using the command: ` npm install -g @usebruno/cli` . Then, execute the tests using `bru run`. See the results below:   
 
