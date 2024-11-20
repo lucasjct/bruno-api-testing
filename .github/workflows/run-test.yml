@@ -14,7 +14,7 @@ jobs:
         run: npm install -g @usebruno/cli 
 
       - name: Run tests
-        run: bru run
+        run: bru run --env-var baseUrl="https://reqres.in/api"
 
   run-with-httpexpect:
     runs-on: ubunt-latest
