@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:  
       - name: Checkout code 
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4
 
       - name: Install Bruno
         run: npm install -g @usebruno/cli 
@@ -19,11 +19,12 @@ jobs:
   run-with-httpexpect:
     runs-on: ubunt-latest
     steps:
-      - name: Checkout code 
-        uses: actions/checkout@v4.1.1
+      - name: Checkout code and install go lang
+        uses: actions/checkout@v4
 
-      - name: install golang
-        uses: actions/setup-go@v4.0.1
+      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v4
+      - run: go version  
 
-      - name: run tests
-        uses: make test-api
+      - name: run tests with httpexpect
+        run: make test-api
