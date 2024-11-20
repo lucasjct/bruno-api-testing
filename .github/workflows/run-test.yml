@@ -3,20 +3,27 @@ name: "run api test"
 on:
   workflow_dispatch:
 
-
 jobs:
   run-with-bruno:
     runs-on: ubuntu-latest
     steps:  
       - name: Checkout code 
         uses: actions/checkout@v4.1.1
+
       - name: Install Bruno
         run: npm install -g @usebruno/cli 
+
       - name: Run tests
         run: bru run
 
   run-with-httpexpect:
     runs-on: ubunt-latest
+    steps:
+      - name: Checkout code 
+        uses: actions/checkout@v4.1.1
 
+      - name: install golang
+        uses: actions/setup-go@v4.0.1
 
-
+      - name: run tests
+        uses: make test-api
