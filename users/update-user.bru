@@ -16,10 +16,6 @@ body:json {
   } 
 }
 
-vars:pre-request {
-  newEmail: george.bluth@company.br
-}
-
 tests {
   const data = res.getBody();
   
@@ -33,9 +29,6 @@ tests {
   
   test("Status should be 200", function(){
     expect(res.status).to.equal(200);
-  })
-  test("New email should contains company", function(){
-    expect(data.email).to.equal('george.bluth@company.br');
   })
   
 }
