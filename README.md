@@ -8,7 +8,7 @@ How to test API using Bruno
 
 Bruno is an open-source alternative to API testing. We can use Bruno instead of Postman, Insomnia, etc. It is available for Linux, Windows and MacOS. To download it, access [Bruno](https://www.usebruno.com/).
 
-With Bruno we can manage the requests with facility, in separated files. There is one file for each request. In Postman, there is a single JSON file for all tests and all requests. For example, if we change just one value of variables, we have that generate a new collection and replace the whole JSON file. Normally, this is the process available on free plan.    
+With Bruno is easy to manage the requests, in separated files. There is one file for each request. In Postman, there is a single JSON file for all tests and all requests. For example, if we change just one value of variables, we have that generate a new collection and replace the whole JSON file. Normally, this is the process available on free plan.    
 
 <p align="center">
   <img src="./image/one-file-for-each-request.png" />
